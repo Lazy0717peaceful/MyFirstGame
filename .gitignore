@@ -1,0 +1,9 @@
+build/
+bin/
+
+*.o
+*.exe
+
+.DS_Store
+.vscode/
+external/glfw/
