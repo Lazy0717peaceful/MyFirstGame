@@ -138,7 +138,7 @@ int main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     int texWidth1, texHeight1, nrChannels1;
     stbi_set_flip_vertically_on_load(true);
-    unsigned char *data1 = stbi_load("Assets/score.png", &texWidth1, &texHeight1, &nrChannels1, 0);
+    unsigned char *data1 = stbi_load("assets/score.png", &texWidth1, &texHeight1, &nrChannels1, 0);
     if (data1)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texWidth1, texHeight1, 0, GL_RGBA, GL_UNSIGNED_BYTE, data1);
@@ -156,7 +156,7 @@ int main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     int texWidth2, texHeight2, nrChannels2;
     stbi_set_flip_vertically_on_load(true);
-    unsigned char *data2 = stbi_load("Assets/clear.png", &texWidth2, &texHeight2, &nrChannels2, 4);
+    unsigned char *data2 = stbi_load("assets/clear.png", &texWidth2, &texHeight2, &nrChannels2, 4);
     if (data2)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texWidth2, texHeight2, 0, GL_RGBA, GL_UNSIGNED_BYTE, data2);
